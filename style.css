@@ -3,6 +3,6 @@ p {
   font-family: Lato;
 }
 
-#pic_container img {
-  height: 25rem;
+.pic_container img {
+  max-width: 75%;
 }
