@@ -5,6 +5,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import App from './App';
 import RandomCatDog from './src/pages/RandomCatDog';
+import TodoApp from './src/pages/TodoApp/TodoApp';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
@@ -17,6 +18,10 @@ const router = createBrowserRouter([
   {
     path: '/random-cat-dog',
     element: <RandomCatDog />,
+  },
+  {
+    path: '/todo-app',
+    element: <TodoApp />,
   },
 ]);
 

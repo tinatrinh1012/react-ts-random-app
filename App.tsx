@@ -68,6 +68,14 @@ export default function App() {
     <div>
       <h1>React + Typescript App</h1>
       <h3>Home Page</h3>
+      <ul>
+        <li>
+          <a href="/random-cat-dog">Random Cat Dog</a>
+        </li>
+        <li>
+          <a href="/todo-app">Todo App</a>
+        </li>
+      </ul>
     </div>
   );
 }
