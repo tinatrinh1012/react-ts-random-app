@@ -1,5 +1,6 @@
 import * as React from 'react';
 import { useState } from 'react';
+import TodoList from '../TodoApp/components/TodoList';
 import { Todo } from '../TodoApp/model';
 import InputField from './components/InputField';
 import './TodoApp.css';
@@ -17,12 +18,11 @@ const TodoApp: React.FC = () => {
     }
   };
 
-  // console.log(todos);
-
   return (
     <div id="todo-app">
       <div className="heading">Taskify</div>
       <InputField todo={todo} setTodo={setTodo} handleAdd={handleAdd} />
+      <TodoList todos={todos} setTodos={setTodos} />
     </div>
   );
 };
