@@ -17,7 +17,6 @@ const TodoApp: React.FC = () => {
       setTodo('');
     }
   };
-
   return (
     <div id="todo-app">
       <div className="heading">Taskify</div>

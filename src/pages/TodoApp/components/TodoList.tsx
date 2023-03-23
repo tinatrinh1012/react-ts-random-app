@@ -1,4 +1,5 @@
 import * as React from 'react';
+import SingleTodo from '../../TodoApp/components/SingleTodo';
 import { Todo } from '../../TodoApp/model';
 import '../TodoApp.css';
 
@@ -11,7 +12,12 @@ const TodoList: React.FC<Props> = ({ todos, setTodos }) => {
   return (
     <div className="todos">
       {todos.map((todo) => (
-        <li>{todo.todo}</li>
+        <SingleTodo
+          todo={todo}
+          key={todo.id}
+          todos={todos}
+          setTodos={setTodos}
+        />
       ))}
     </div>
   );

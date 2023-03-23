@@ -5,10 +5,25 @@ body {
 #todo-app {
   height: 100vh;
   width: 100vw;
+  padding-top: 5rem;
   text-align: center;
   background-color: rgb(137, 221, 221);
 }
 
 .heading {
   font-weight: bold;
+}
+
+.todos__single {
+  position: relative;
+  border: 1px solid black;
+  width: 50%;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.todoIcons {
+  position: absolute;
+  right: 0;
 }
